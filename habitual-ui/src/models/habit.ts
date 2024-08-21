@@ -1,10 +1,12 @@
 class Habit {
   private name: string
   private consistencyGoal: number
+  private startDate: Date
 
-  public constructor(name: string, consistencyGoal: number) {
+  public constructor(name: string, consistencyGoal: number, startDate: Date) {
     this.name = name
     this.consistencyGoal = consistencyGoal
+    this.startDate = startDate
   }
 
   public getName(): string {
@@ -13,6 +15,10 @@ class Habit {
 
   public getConsistencyGoal(): number {
     return this.consistencyGoal
+  }
+
+  public getStartDate(): Date {
+    return this.startDate
   }
 }
 
